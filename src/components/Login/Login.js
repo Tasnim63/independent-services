@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Login.css'
-import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useLocation, useNavigate } from 'react-router-dom';
 import GoogleLogo from '../../assets/img/google.svg'
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import auth from '../../Firebase/Firesbase.init';
@@ -9,9 +11,17 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 const provider = new GoogleAuthProvider();
 const Login = () => {
     const navigate = useNavigate();
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
+    const [userInfo, setUserInfo] = useState(
+        {
+            email: "",
+            password: "",
+        }
+    )
+    const [errors, setErrors] = useState({
+        email: "",
+        password: "",
+        genaral: "",
+    });
     const googleAuth = () => {
 
         signInWithPopup(auth, provider)
@@ -34,22 +44,52 @@ const Login = () => {
         const emailRegex = /\S+@\S+\.\S+/;
         const validEmail = emailRegex.test(e.target.value);
         if (validEmail) {
-            setEmail(e.target.value);
+            setUserInfo({ ...userInfo, email: e.target.value });
+            setErrors({ ...errors, email: "" })
         } else {
-            setError('Invalid email !!')
+            setErrors({ ...errors, email: "Invalid email" })
         }
     }
     const handdlePasswordChange = (e) => {
         const passwordRegex = /.{6,}/;
         const validPassword = passwordRegex.test(e.target.value);
-        console.log(validPassword);
-        // setPassword(e.target.value);
+        if (validPassword) {
+            setUserInfo({ ...userInfo, password: e.target.value });
+            setErrors({ ...errors, password: "" })
+        } else {
+            setErrors({ ...errors, password: "Invalid password at least 6 charecter" });
+        }
+
     }
     const handdleLogin = (e) => {
         e.preventDefault();
-        signInWithEmailAndPassword(email, password);
+        signInWithEmailAndPassword(userInfo.email, userInfo.password);
     }
+    useEffect(() => {
 
+        if (hookError) {
+            switch (hookError?.code) {
+                case "auth/invalid-email":
+                    toast("Invalid email, Enter valid email");
+                    break;
+
+                case "auth/invalid-password":
+                    toast("Wrong password!!")
+                    break;
+                default:
+                    toast("something went wrong!!")
+            }
+        }
+    }, [hookError]);
+
+
+    const location = useLocation();
+    const from = loading.state?.from?.pathname || "/checkout"
+    useEffect(() => {
+        if (user) {
+            navigate(from);
+        }
+    }, [user])
     return (
         <div className='auth-form-container '>
             <div className='auth-form'>
@@ -61,17 +101,21 @@ const Login = () => {
                             <input type='text' name='email' onChange={handdleEmailChange} />
 
                         </div>
-                        {error && <p>{error}</p>}
+                        {errors?.email && <p>{errors.email}</p>}
+                        {hookError && <p>{hookError?.message}</p>}
                     </div>
                     <div className='input-field'>
                         <label htmlFor='password'>Password</label>
                         <div className='input-wrapper'>
                             <input type='password' name='password' onChange={handdlePasswordChange} />
+
                         </div>
+                        <p>{errors.password}</p>
                     </div>
                     <button type='submit' className='auth-form-submit'>
                         Login
                     </button>
+                    <ToastContainer></ToastContainer>
                 </form>
                 <p className='redirect'>
                     New to Tech Geeks?{" "}

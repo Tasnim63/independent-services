@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './PhotographerInfo.css'
 const PhotographerInfo = ({ photographer }) => {
+    const navigate = useNavigate();
     const { img, name, price, description } = photographer;
     return (
         <div className='p-3  col col-lg-4 col-md-6 col-sm-12 gy-3'>
@@ -12,7 +13,7 @@ const PhotographerInfo = ({ photographer }) => {
                     <h5 className="card-title">Price:{price}</h5>
                     <p className="card-title">{description}</p>
                     <Link to="/checkout">
-                        <button className='btn '> Photographer Checkout</button>
+                        <button onClick={() => navigate("/signup")} className='btn '> Photographer Checkout</button>
                     </Link>
                 </div>
             </div>
