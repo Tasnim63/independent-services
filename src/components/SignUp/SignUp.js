@@ -35,13 +35,13 @@ const Signup = () => {
                     <div className='input-field'>
                         <label htmlFor='email'>Email</label>
                         <div className='input-wrapper'>
-                            <input type='email' name='email' id='email' />
+                            <input type='email' name='email' id='email' required />
                         </div>
                     </div>
                     <div className='input-field'>
                         <label htmlFor='password'>Password</label>
                         <div className='input-wrapper'>
-                            <input type='password' name='password' id='password' />
+                            <input type='password' name='password' id='password' required />
                         </div>
                     </div>
                     <div className='input-field'>
@@ -50,7 +50,7 @@ const Signup = () => {
                             <input
                                 type='password'
                                 name='confirmPassword'
-                                id='confirm-password'
+                                id='confirm-password' required
                             />
                         </div>
                     </div>
