@@ -1,0 +1,23 @@
+.carosel-img {
+    width: 1350px;
+    height: 550px;
+}
+
+.carousel-heading {
+    color: goldenrod;
+    font-size: 50px;
+    font-family: serif;
+
+}
+
+.carouser-des {
+    color: goldenrod;
+    font-size: 30px;
+    font-family: serif;
+}
+
+.photographer-services {
+    color: goldenrod;
+    font-family: serif;
+    text-align: center;
+}

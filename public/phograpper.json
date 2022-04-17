@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://img.freepik.com/free-photo/handsome-african-guy-with-stylish-haircut-taking-photo-digital-camera_171337-1345.jpg?t=st=1650125734~exp=1650126334~hmac=091b2b6149a6201b3702fc198aad79631d15cc625cc0c2d642f08b6e1b46b416&w=740",
+        "name": " Nigel Barker",
+        "price": 45556,
+        "description": " A professional photographer takes pictures as all or part of their job. Many people hire a photographer for their wedding, debutante party or other special events"
+    },
+    {
+        "id": 2,
+        "img": "https://img.freepik.com/free-photo/young-woman-black-t-shirt-with-camera_140725-12997.jpg?t=st=1650127385~exp=1650127985~hmac=167259167a3cf599c5f59e4b2f29d61b74d190ba1043feca2be94488d2bc6483&w=740",
+        "name": " Steve McCurry ",
+        "price": 95556,
+        "description": " A professional photographer takes pictures as all or part of their job. Many people hire a photographer for their wedding, debutante party or other special events"
+    },
+    {
+        "id": 3,
+        "img": "https://img.freepik.com/free-photo/photographer-white-background_1368-3532.jpg?t=st=1650127385~exp=1650127985~hmac=acd0378e1d66d3d30fe521f94c8ebd25cd57c329635449de44b31a3a79f41e91&w=360",
+        "name": "   Annie Leibovitz",
+        "price": 5556,
+        "description": " A professional photographer takes pictures as all or part of their job. Many people hire a photographer for their wedding, debutante party or other special events"
+    },
+    {
+        "id": 4,
+        "img": "https://img.freepik.com/free-photo/dreamy-male-photographer-taking-pictures-studio-with-yellow-interior-indoor-photo-joyful-african-guy-with-camera-isolated-bright-background_197531-25323.jpg?t=st=1650133857~exp=1650134457~hmac=81fcf25f674f6c8a484107825df4ccacb14114ef22206a0ccdceab1020c5cb16&w=740",
+        "name": " Leibovitz",
+        "price": 11556,
+        "description": " A professional photographer takes pictures as all or part of their job. Many people hire a photographer for their wedding, debutante party or other special events"
+    },
+    {
+        "id": 5,
+        "img": "https://img.freepik.com/free-photo/young-active-male-traveler-takes-photo-with-retro-camera-dressed-hat-raincoat-as-travels-during-rainy-day-poses-against-yellow-wall_273609-33653.jpg?t=st=1650133857~exp=1650134457~hmac=5c4086dc3cc69412954683f58d394f61c0c10a23566e461cbf760ab28f3b4bc2&w=740",
+        "name": "   Annie Leibovitz",
+        "price": 5556,
+        "description": " A professional photographer takes pictures as all or part of their job. Many people hire a photographer for their wedding, debutante party or other special events"
+    },
+    {
+        "id": 6,
+        "img": "https://img.freepik.com/free-photo/young-african-american-girl-teen-student-denim-clothes-backpack-hold-camera-isolated-blue-wall_365776-235.jpg?t=st=1650133857~exp=1650134457~hmac=e7d917a23e6f58618eb3a72b6359dea419ff7750bac1c198fa55256b22ac1678&w=740",
+        "name": "   Annie Leibovitz",
+        "price": 5556,
+        "description": " A professional photographer takes pictures as all or part of their job. Many people hire a photographer for their wedding, debutante party or other special events"
+    }
+]

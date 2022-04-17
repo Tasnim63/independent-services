@@ -1,0 +1,12 @@
+.card-img {
+    width: 600px;
+    height: 400px;
+}
+
+.card-title {
+    color: rgb(156, 117, 20);
+}
+
+.btn {
+    background-color: goldenrod;
+}
