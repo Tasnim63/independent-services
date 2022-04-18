@@ -7,6 +7,17 @@
     color: rgb(156, 117, 20);
 }
 
-.btn {
+.card-describtion {
+    color: rgb(64, 59, 59);
+    font-size: 20px;
+}
+
+
+.checkout-button {
     background-color: goldenrod;
+    width: 100%;
+}
+
+.checkout-button:hover {
+    background-color: rgb(248, 236, 172);
 }

@@ -28,14 +28,14 @@ const Header = () => {
         <div className=' sticky-top'>
             <nav className=" navbar navbar-expand-lg shadow-sm navbar-light bg-white  ">
                 <div className="container">
-                    <Link className="navbar-brand" to="/"><img height={50} className="rounded-circle" src={logo} alt="" /></Link>
+                    <Link className="navbar-brand" to="/"><img height={50} className="rounded-circle" src={logo} alt="" /><span className='wedding-photograppher'>Wedding Photographer</span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarText">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <CustomLink className="nav-link " aria-current="page" to="/services">Services</CustomLink>
+                                <CustomLink className="nav-link " aria-current="page" to="/services">Home</CustomLink>
                             </li>
                             <li className="nav-item">
                                 <CustomLink className="nav-link " to="/checkout">CheckOut</CustomLink>

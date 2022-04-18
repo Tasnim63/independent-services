@@ -1,3 +1,26 @@
 .navbar {
     position: sticky;
 }
+
+.wedding-photograppher {
+    color: goldenrod;
+    font-size: 25px;
+}
+
+.logout-button {
+
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(161, 123, 28);
+    color: rgb(161, 123, 28);
+}
+
+.logout-button:hover {
+    background-color: rgb(240, 218, 161);
+    color: rgb(131, 103, 31);
+    padding-left: 3px;
+}
+
+.nav-link {
+    font-size: 20px;
+}
