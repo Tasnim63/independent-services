@@ -24,22 +24,22 @@ const Services = () => {
                         <div class="carousel-item active">
                             <img src={pic3} class="d-block  img-fluid carosel-img" alt="..." />
                             <div class="carousel-caption  d-md-block">
-                                <h3 className='carousel-heading'>I AM A PHOTOGRAPPER !!!</h3>
-                                <p className='carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>
+                                <h3 className=' text-center carousel-heading'>I AM A PHOTOGRAPPER !!!</h3>
+                                <p className=' text-start carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src={pic2} class="d-block  img-fluid carosel-img" alt="..." />
                             <div class="carousel-caption  d-md-block">
                                 <h3 className='carousel-heading'>I AM A PHOTOGRAPPER !!!</h3>
-                                <p className='carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>
+                                <p className=' text-start carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src={pic1} class="d-block  img-fluid carosel-img" alt="..." />
                             <div class="carousel-caption  d-md-block">
                                 <h3 className='carousel-heading'>I AM A PHOTOGRAPPER !!!</h3>
-                                <p className='carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>
+                                <p className=' text-start carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>
                             </div>
                         </div>
                     </div>

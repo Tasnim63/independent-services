@@ -105,7 +105,7 @@ const Signup = () => {
     return (
         <div className='form-container '>
             <div className='Login-form'>
-                <h1> Please Sign Up</h1>
+                <h1> Please Sign Up </h1>
                 <form onSubmit={handdleSignIn}>
                     <div className='input-field'>
                         <label htmlFor='email'>Email</label>
@@ -123,7 +123,7 @@ const Signup = () => {
                         <p>{errors.password}</p>
                     </div>
                     <div className='input-field'>
-                        <label htmlFor='confirm-password'>Confirm Password</label>
+                        <label htmlFor='confirm-password'>Confirm Password :</label>
                         <div className='input-wrapper'>
                             <input
                                 type='password'

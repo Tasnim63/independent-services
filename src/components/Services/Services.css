@@ -20,4 +20,25 @@
     color: goldenrod;
     font-family: serif;
     text-align: center;
+    padding: 30px;
+}
+
+h3 {
+
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s steps(22) infinite;
+    border-right: 3px solid rgb(26, 28, 26);
+    font-size: 60px;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 22ch;
+    }
 }
