@@ -103,9 +103,9 @@ const Signup = () => {
         }
     }, [user])
     return (
-        <div className='auth-form-container '>
-            <div className='auth-form'>
-                <h1>Sign Up</h1>
+        <div className='form-container '>
+            <div className='Login-form'>
+                <h1> Please Sign Up</h1>
                 <form onSubmit={handdleSignIn}>
                     <div className='input-field'>
                         <label htmlFor='email'>Email</label>
@@ -136,22 +136,22 @@ const Signup = () => {
                         <h6>{errors.confirmPassword}</h6>
                     </div>
 
-                    <button type='submit' className='auth-form-submit'>
+                    <button type='submit' className='submit-button'>
                         Sign Up
                     </button>
                     <ToastContainer></ToastContainer>
                 </form>
-                <p className='redirect'>
+                <p className='create-account'>
                     Already have an account?{" "}
                     <span onClick={() => navigate("/login")}>Login</span>
                 </p>
                 <div className='horizontal-divider'>
                     <div className='line-left' />
-                    <p>or</p>
+                    <p className="horizontal-para">or</p>
                     <div className='line-right' />
                 </div>
                 <div className='input-wrapper'>
-                    <button className='google-auth' onClick={googleAuth}>
+                    <button className='google-logo' onClick={googleAuth}>
                         <img src={GoogleLogo} alt='' />
                         <p> Continue with Google </p>
                     </button>

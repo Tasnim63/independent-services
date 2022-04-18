@@ -22,7 +22,7 @@ const Services = () => {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item ">
-                            <img src={pic1} className="carosel-img d-block " alt="..." />
+                            <img src={pic1} className="img-fluid carosel-img d-block " alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                                 <h3 className='carousel-heading'>I AM A PHOTOGRAPPER !!!</h3>
                                 <p className='carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>
@@ -36,7 +36,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div className="carousel-item active">
-                            <img src={pic3} className="carosel-img d-block " alt="..." />
+                            <img src={pic3} className="img-fluid carosel-img d-block " alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                                 <h3 className='carousel-heading'>I AM A PHOTOGRAPPER !!!</h3>
                                 <p className='carouser-des'>A photographer setting up a shot with the aid of a tripod.</p>

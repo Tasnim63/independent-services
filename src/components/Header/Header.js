@@ -43,6 +43,9 @@ const Header = () => {
                             <li className="nav-item">
                                 <CustomLink className="nav-link " to="/blogs">Blogs</CustomLink>
                             </li>
+                            <li className="nav-item">
+                                <CustomLink className="nav-link " to="/about">About</CustomLink>
+                            </li>
                             {
                                 user?.uid ? (<button className='logout-button' onClick={handdleLogout}>Logout</button>) : (<li className="nav-item">
                                     <CustomLink className="nav-link" to="/login">Login</CustomLink>

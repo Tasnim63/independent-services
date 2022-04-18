@@ -1,12 +1,12 @@
-.auth-form-container {
+.form-container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.auth-form {
-    width: 500px;
+.Login-form {
+    width: 400px;
     margin: 100px auto;
     background-color: #fff;
     display: flex;
@@ -17,9 +17,9 @@
     padding-bottom: 50px;
 }
 
-.auth-form h1 {
+.Login-form h1 {
     margin: 40px 0;
-    color: #1b4388;
+    color: rgb(161, 123, 28);
 }
 
 .input-field {
@@ -32,20 +32,20 @@
     font-size: 17px;
     margin-bottom: 10px;
     margin-left: 10px;
-    color: #1b4388;
+    color: rgb(161, 123, 28);
 }
 
 .input-wrapper {
     padding: 2px;
     border-radius: 7px;
-    background: #1b4388;
+    color: rgb(161, 123, 28);
     background: linear-gradient(25deg,
-            rgba(27, 67, 136, 1) 0%,
-            rgba(30, 144, 194, 1) 100%);
+            rgba(161, 123, 28) 0%,
+            rgb(221, 194, 126) 100%);
 }
 
 .input-field input {
-    width: 415px;
+    width: 315px;
     height: 55px;
     border-radius: 5px;
     padding: 15px;
@@ -55,49 +55,53 @@
     outline: none;
 }
 
-.auth-form-submit {
-    width: 100%;
+.google-logo {
     height: 55px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    color: white;
-    background: #1b4388;
-    background: linear-gradient(25deg, #1b4388 0%, #1e90c2 100%);
-}
-
-.google-auth {
-    height: 55px;
-    width: 415px;
+    width: 315px;
+    align-items: center;
     background-color: #fff;
     border-radius: 5px;
     font-size: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    color: #1b4388;
+    background-color: rgb(234, 204, 130);
     font-size: 18px;
     position: relative;
+    cursor: pointer;
+    border: none;
+
 }
 
 .google-auth img {
     position: absolute;
-    left: 10px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
 }
+
+
+.submit-button {
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+
+    background-color: rgb(161, 123, 28);
+
+}
+
 
 .google-auth p {
     margin-left: 10px;
 }
 
-.redirect {
-    margin-top: 10px;
-    color: #1b4388;
+.create-account {
+    margin-top: 15px;
+    color: rgb(161, 123, 28);
 }
 
 .redirect span {
@@ -112,9 +116,9 @@
     align-items: center;
 }
 
-.horizontal-divider p {
+.horizontal-para {
     margin: 0 10px 2px 10px;
-    color: #1e90c2;
+    color: rgb(161, 123, 28);
 }
 
 .line-right,
@@ -124,13 +128,15 @@
 }
 
 .line-left {
-    background: #1b4388;
-    background: linear-gradient(90deg, #1b4388 0%, #1e90c2 100%);
+    background: rgb(161, 123, 28);
+    ;
+
 }
 
 .line-right {
-    background: #1b4388;
-    background: linear-gradient(90deg, #1e90c2 0%, #1b4388 100%);
+    background: rgb(161, 123, 28);
+
+
 }
 
 .error {

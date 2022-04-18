@@ -91,43 +91,43 @@ const Login = () => {
         }
     }, [user])
     return (
-        <div className='auth-form-container '>
-            <div className='auth-form'>
-                <h1>Login</h1>
+        <div className='form-container '>
+            <div className='Login-form'>
+                <h1>Please Login</h1>
                 <form onSubmit={handdleLogin}>
                     <div className='input-field'>
-                        <label htmlFor='email'>Email</label>
+                        <label htmlFor='email'>Email:</label>
                         <div className='input-wrapper'>
-                            <input type='text' name='email' onChange={handdleEmailChange} />
+                            <input type='text' name='email' onChange={handdleEmailChange} placeholder='Enter your email' />
 
                         </div>
                         {errors?.email && <p>{errors.email}</p>}
                         {hookError && <p>{hookError?.message}</p>}
                     </div>
                     <div className='input-field'>
-                        <label htmlFor='password'>Password</label>
+                        <label htmlFor='password'>Password:</label>
                         <div className='input-wrapper'>
-                            <input type='password' name='password' onChange={handdlePasswordChange} />
+                            <input type='password' name='password' onChange={handdlePasswordChange} placeholder='Enter your password' />
 
                         </div>
                         <p>{errors.password}</p>
                     </div>
-                    <button type='submit' className='auth-form-submit'>
+                    <button type='submit' className='submit-button'>
                         Login
                     </button>
                     <ToastContainer></ToastContainer>
                 </form>
-                <p className='redirect'>
-                    New to Tech Geeks?{" "}
-                    <span onClick={() => navigate("/signup")}>Create New Account</span>
+                <p className='create-account'>
+                    New to photograper??{" "}
+                    <span onClick={() => navigate("/signup")}>Create Account</span>
                 </p>
                 <div className='horizontal-divider'>
                     <div className='line-left' />
-                    <p>or</p>
+                    <p className='horizontal-para'>or</p>
                     <div className='line-right' />
                 </div>
                 <div className='input-wrapper'>
-                    <button className='google-auth' onClick={googleAuth}>
+                    <button className='google-logo' onClick={googleAuth}>
                         <img src={GoogleLogo} alt='' />
                         <p> Continue with Google </p>
                     </button>
